@@ -42,7 +42,7 @@ namespace Api.Controllers
             {
                 Email = user.Email,
                 DisplayName = user.DisplayName,
-                Token = _tokenService.CreateToken(user)
+                Token = await _tokenService.CreateToken(user)
             };
         }
 
@@ -90,7 +90,7 @@ namespace Api.Controllers
             {
                 Email = user.Email,
                 DisplayName = user.DisplayName,
-                Token = _tokenService.CreateToken(user)
+                Token = await _tokenService.CreateToken(user)
             };
         }
 
@@ -103,17 +103,28 @@ namespace Api.Controllers
                 Email = registerDto.Email,
                 UserName = registerDto.Email
             };
+            //creating the user in the database
             var result = await _userManager.CreateAsync(user , registerDto.Password);
-
             if(!result.Succeeded) return BadRequest(new ApiResponse(400));
+
+            // adding role to the user
+            var roleAddResult = await _userManager.AddToRoleAsync(user, "Customer");
+            if (!roleAddResult.Succeeded) return BadRequest("Failed to add to role");
 
             return new UserDto()
             {
                 DisplayName = user.DisplayName,
-                Token = _tokenService.CreateToken(user),
+                Token = await _tokenService.CreateToken(user),
                 Email = user.Email,
             };
         }
-            
+
+        [HttpGet("TestAdmin")]
+        [Authorize(Roles = "Admin")]
+        public ActionResult<string> Hello()
+        {
+            return "Hello Hamada al Admin";
+        }
+
     }
 }

@@ -108,9 +108,10 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<WebDbContext>();
     var userManger = services.GetRequiredService<UserManager<AppUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
 
     await StoreSeed.SeedDataAsync(context);
-    await AppIdentityDbContextSeed.SeedUserAsync(userManger);
+    await AppIdentityDbContextSeed.SeedUserAsync(userManger, roleManager);
 
 }
 
