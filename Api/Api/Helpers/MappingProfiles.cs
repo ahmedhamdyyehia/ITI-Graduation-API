@@ -18,6 +18,8 @@ namespace Api.Helpers
             // what we are affecting here is the destination member which is ProductToReturnDTO
 
             CreateMap<Address, AddressDto>().ReverseMap();
+            CreateMap<TypeToCreate, ProductType>();
+            CreateMap<ProductCreateDto, Products>();
         }
     }
 }
