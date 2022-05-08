@@ -24,9 +24,26 @@ namespace Infrastructure.Data
         public async Task<T> GetByIdAsync(int id)
         {
             // we use set method => it create db set that can be used to query and save instances 
-            // of the type of entity for which a set should be returned
-
+            // of the type of entity for which a set should be returned          
             return await context.Set<T>().FindAsync(id);
+        }
+
+        public async Task<int> AddEntityAsync(T Entity)
+        {
+            await context.Set<T>().AddAsync(Entity);
+            return context.SaveChanges();          
+        }
+
+        public async Task<int> UpdateEntityAsync(T Entity)
+        {
+            context.Entry(Entity).State = EntityState.Modified;
+            return await context.SaveChangesAsync();           
+        }
+
+        public async Task<int> DeleteEntityAsync(T entity)
+        {
+            context.Set<T>().Remove(entity);
+            return await context.SaveChangesAsync();
         }
 
         public async Task<IReadOnlyList<T>> ListAllAsync()
@@ -38,11 +55,11 @@ namespace Infrastructure.Data
              Include(p=>p.ProductBrand)
             .Include(p=>p.ProductType)
             .ToListAsync(); */
-            
+
             // that is what we want
 
             return await context.Set<T>().ToListAsync();
-}
+        }
 
         public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec)
         {

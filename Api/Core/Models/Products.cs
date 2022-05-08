@@ -11,22 +11,20 @@ namespace Core.Models
 {
     public class Products : BaseEntity
     {
-      [Required,MaxLength(100)]
+        [Required, MaxLength(100)]
         public string Name { get; set; }
-      [Required, MaxLength(500)]
+        [Required, MaxLength(500)]
 
         public string Description { get; set; }
-
-       // [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
-       [Required]
+        [Required]
         public string PictureUrl { get; set; }
         [ForeignKey("ProductType")]
         public int ProductTypeId { get; set; }
         public ProductType ProductType { get; set; }
-       [ForeignKey("ProductBrand")]
+        [ForeignKey("ProductBrand")]
         public int ProductBrandId { get; set; }
         public ProductBrand ProductBrand { get; set; }
-       
+
     }
 }
