@@ -1,13 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Infrastructure.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using Core.Models;
-using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Core.Specifications;
 using Api.DTOs;
 using AutoMapper;
-using System.Collections.Generic;
 using Api.Errors;
 using Api.Helpers;
 
@@ -20,16 +16,19 @@ namespace Api.Controllers
         private readonly IGenericRepository<ProductType> _productTypeRepo;
         private readonly IGenericRepository<Products> _productsRepo;
         private readonly IMapper _mapper;
+        private readonly IConfiguration _config;
 
         public ProductsController(IGenericRepository<Products> productsRepo,
             IGenericRepository<ProductType> productTypeRepo,
             IGenericRepository<ProductBrand> productBrandRepo,
-            IMapper mapper)
+            IMapper mapper,
+            IConfiguration config)
         {
             _mapper = mapper;
             _productsRepo = productsRepo;
             _productTypeRepo = productTypeRepo;
             _productBrandRepo = productBrandRepo;
+            _config = config;
         }
 
         [HttpGet]
@@ -63,6 +62,7 @@ namespace Api.Controllers
             return _mapper.Map<ProductToReturnDto>(product);
         }
 
+        //brands and types actions
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
         {
@@ -70,10 +70,80 @@ namespace Api.Controllers
         }
 
         [HttpGet("types")]
-        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetTypes()
+        public async Task<ActionResult<IReadOnlyList<ProductType>>> GetTypes()
         {
-            return Ok(await _productTypeRepo.ListAllAsync());
+            var type = await _productTypeRepo.ListAllAsync();
+            var typeToReturn = new List<ProductType>();
+
+            foreach (var item in type)
+            {
+                typeToReturn.Add(new ProductType { Id = item.Id ,
+                    Name=item.Name ,
+                    PictureUrl= _config["ApiUrl"] + item.PictureUrl
+                });
+            }
+            return Ok(typeToReturn);
         }
+    
+        // product crud opertions
+        [HttpPost]
+        public async Task<ActionResult<Products>> CreateProduct(ProductCreateDto productToCreate)
+        {
+            var product = _mapper.Map<ProductCreateDto, Products>(productToCreate);
+            product.PictureUrl = "images/products/placeholder.png";
+          
+            var result = await _productsRepo.AddEntityAsync(product);
+
+            if (result <= 0) return BadRequest(new ApiResponse(400, "Problem creating product"));
+
+            return Ok(product);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Products>> UpdateProduct(int id, ProductCreateDto productToUpdate)
+        {
+            var product = await _productsRepo.GetByIdAsync(id);
+
+            _mapper.Map(productToUpdate, product);
+           
+            var result = await _productsRepo.UpdateEntityAsync(product);
+
+            if (result <= 0) return BadRequest(new ApiResponse(400, "Problem updating product"));
+
+            return Ok(product);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteProduct(int id)
+        {
+            var product = await _productsRepo.GetByIdAsync(id);
+          
+            var result = await _productsRepo.DeleteEntityAsync(product);
+
+            if (result <= 0) return BadRequest(new ApiResponse(400, "Problem deleting product"));
+
+            return Ok();
+        }
+
+        [HttpPut]
+        [Route("{id}/photo")]
+        public async Task<ActionResult> UplaodImg(IFormFile productImg , int id)
+        {
+            var product = await _productsRepo.GetByIdAsync(id);
+
+            if (productImg != null)
+            {
+                using (FileStream fs = new FileStream($"./wwwroot/images/products/{productImg.FileName}", FileMode.Create))
+                {
+                    productImg.CopyTo(fs);
+                }
+                product.PictureUrl = $"images/products/{productImg.FileName}";
+                var result = await _productsRepo.UpdateEntityAsync(product);
+                if (result <= 0) return BadRequest(new ApiResponse(400, "Problem updating image"));
+            }
+            return Ok();
+        }
+
     }
 }
 

@@ -12,6 +12,7 @@ namespace Core.Models
     {
         [Required,MaxLength(100)]
         public string Name { get; set; }
+        public string PictureUrl { get; set; }
         public virtual List<Products> Products { get; set; }
 
     }

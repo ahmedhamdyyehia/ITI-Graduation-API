@@ -1,18 +1,22 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Boards",
+    "PictureUrl": "images/Types/1.jpg"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Hats",
+    "PictureUrl": "images/Types/2.jpg"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Boots",
+    "PictureUrl": "images/Types/3.jpg"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Gloves",
+    "PictureUrl": "images/Types/4.jpg"
   }
 ]
