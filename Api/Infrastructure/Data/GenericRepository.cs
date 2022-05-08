@@ -47,17 +47,7 @@ namespace Infrastructure.Data
         }
 
         public async Task<IReadOnlyList<T>> ListAllAsync()
-        {
-            // here we cant use include() to access the navigation property
-            // thats why we are going to use Specification pattern.
-
-            /*return await context.Products.
-             Include(p=>p.ProductBrand)
-            .Include(p=>p.ProductType)
-            .ToListAsync(); */
-
-            // that is what we want
-
+        {                  
             return await context.Set<T>().ToListAsync();
         }
 
@@ -74,6 +64,11 @@ namespace Infrastructure.Data
         public async Task<int> CountAsync(ISpecification<T> spec)
         {
             return await ApplySpecification(spec).CountAsync(); // to get the number of results
+        }
+
+        public async Task<List<Products>> GetLatestAddedProductsAsync()
+        {
+            return await context.Products.OrderByDescending(x=>x.Id).Take(8).ToListAsync();
         }
 
         private IQueryable<T> ApplySpecification (ISpecification<T> spec)

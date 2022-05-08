@@ -26,5 +26,7 @@ namespace Core.Interfaces
 
         Task<int> CountAsync(ISpecification<T> spec);
 
+        Task<List<Products>> GetLatestAddedProductsAsync();
+
     }
 }
