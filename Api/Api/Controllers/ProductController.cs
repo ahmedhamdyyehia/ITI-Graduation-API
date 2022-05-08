@@ -125,6 +125,16 @@ namespace Api.Controllers
             return Ok();
         }
 
+        [HttpGet]
+        [Route("LastAdded")]
+        public async Task<List<ProductToReturnDto>> GetLastAddedProducts()
+        {
+            var products = await _productsRepo.GetLatestAddedProductsAsync();
+            var data = _mapper.Map<List<ProductToReturnDto>>(products);
+
+            return data;   
+        }
+
         [HttpPut]
         [Route("{id}/photo")]
         public async Task<ActionResult> UplaodImg(IFormFile productImg , int id)
