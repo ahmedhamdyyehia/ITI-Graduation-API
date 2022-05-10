@@ -66,9 +66,9 @@ namespace Infrastructure.Data
             return await ApplySpecification(spec).CountAsync(); // to get the number of results
         }
 
-        public async Task<List<Products>> GetLatestAddedProductsAsync()
+        public async Task<List<Products>> GetLatestAddedProductsAsync(int numberOfProducts)
         {
-            return await context.Products.OrderByDescending(x=>x.Id).Take(8).ToListAsync();
+            return await context.Products.OrderByDescending(x=>x.Id).Take(numberOfProducts).ToListAsync();
         }
 
         private IQueryable<T> ApplySpecification (ISpecification<T> spec)
