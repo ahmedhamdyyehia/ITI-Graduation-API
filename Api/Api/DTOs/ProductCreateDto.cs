@@ -4,7 +4,7 @@ namespace Api.DTOs
 {
     public class ProductCreateDto
     {
-        [Required]
+        
         public string Id { get; set; }
 
         [Required]

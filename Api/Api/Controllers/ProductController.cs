@@ -129,7 +129,7 @@ namespace Api.Controllers
         [Route("LastAdded")]
         public async Task<List<ProductToReturnDto>> GetLastAddedProducts()
         {
-            var products = await _productsRepo.GetLatestAddedProductsAsync();
+            var products = await _productsRepo.GetLatestAddedProductsAsync(8);
             var data = _mapper.Map<List<ProductToReturnDto>>(products);
 
             return data;   
@@ -153,7 +153,7 @@ namespace Api.Controllers
             }
             return Ok();
         }
-
+    
     }
 }
 
