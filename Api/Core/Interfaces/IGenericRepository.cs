@@ -28,5 +28,10 @@ namespace Core.Interfaces
 
         Task<List<Products>> GetLatestAddedProductsAsync();
 
+        void Add(T entity);
+        void Update(T entity);
+        void Delete(T entity);
+        
+
     }
 }

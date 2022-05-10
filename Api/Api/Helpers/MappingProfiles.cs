@@ -20,6 +20,7 @@ namespace Api.Helpers
             CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<TypeToCreate, ProductType>();
             CreateMap<ProductCreateDto, Products>();
+            CreateMap<Address, Core.Models.OrderAggregate.Address>();
         }
     }
 }
