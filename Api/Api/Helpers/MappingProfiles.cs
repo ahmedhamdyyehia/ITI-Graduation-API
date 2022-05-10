@@ -19,7 +19,10 @@ namespace Api.Helpers
 
             CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<TypeToCreate, ProductType>();
+            CreateMap<BrandToCreate, ProductBrand>();
             CreateMap<ProductCreateDto, Products>();
+            CreateMap<CustomerBascketDto, CustomerBasket>();
+            CreateMap<BascketItemDto, BasketItem>();
         }
     }
 }

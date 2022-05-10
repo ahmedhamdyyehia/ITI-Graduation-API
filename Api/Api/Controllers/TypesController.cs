@@ -28,7 +28,6 @@ namespace Api.Controllers
             return type;
         }
 
-        //brands and types crud opertions
         [HttpPost]       
         public async Task<ActionResult<ProductType>> AddType(TypeToCreate typeToCreate)
         {
