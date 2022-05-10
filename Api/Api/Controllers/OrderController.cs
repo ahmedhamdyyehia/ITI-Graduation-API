@@ -28,7 +28,7 @@ namespace Api.Controllers
         {
 
             var email = HttpContext.User?.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
-            var address = mapper.Map<AddressDto, Address>(orderDto.ShipToAddress);
+            Address address = mapper.Map<AddressDto, Address>(orderDto.ShipToAddress);
 
             var order = await orderService.CreateOrderAsync(email, address, orderDto.DeliveryMethodId, orderDto.BasketId );
 

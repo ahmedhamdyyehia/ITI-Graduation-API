@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(WebDbContext))]
-    [Migration("20220509003305_ordermigration")]
-    partial class ordermigration
+    [Migration("20220510232802_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -58,7 +58,10 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.DeliveryMethod", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("DeliveryTime")
                         .HasColumnType("nvarchar(max)");
@@ -80,7 +83,10 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.Order", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("BuyerEmail")
                         .HasColumnType("nvarchar(max)");
@@ -115,7 +121,10 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.OrderItem", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int?>("ItemOrderedProductItemId")
                         .HasColumnType("int");
@@ -141,10 +150,7 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.ProductItemOrdered", b =>
                 {
                     b.Property<int>("ProductItemId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductItemId"), 1L, 1);
 
                     b.Property<string>("PictureUrl")
                         .HasColumnType("nvarchar(max)");
@@ -160,7 +166,10 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.ProductBrand", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -175,7 +184,10 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.Products", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -212,12 +224,18 @@ namespace Infrastructure.Data.Migrations
             modelBuilder.Entity("Core.Models.ProductType", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("PictureUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
