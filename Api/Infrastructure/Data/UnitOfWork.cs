@@ -20,9 +20,10 @@ namespace Infrastructure.Data
 
         private Hashtable _repositories;
 
-        public Task<int> Complete()
+        public async Task<int> Complete()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return await Context.SaveChangesAsync();
         }
 
         public void Dispose()

@@ -23,7 +23,7 @@ namespace Api.Helpers
             CreateMap<ProductCreateDto, Products>();
             CreateMap<CustomerBascketDto, CustomerBasket>();
             CreateMap<BascketItemDto, BasketItem>();
-            CreateMap<Address, Core.Models.OrderAggregate.Address>();
+            CreateMap<AddressDto, Core.Models.OrderAggregate.Address>();
         }
     }
 }

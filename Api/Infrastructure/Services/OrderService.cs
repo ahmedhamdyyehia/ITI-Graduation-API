@@ -56,7 +56,7 @@ namespace Infrastructure.Services
 
             //delete basket 
 
-            BasketRepository.DeleteBasketAsync(basketId);
+            await BasketRepository.DeleteBasketAsync(basketId);
             return order;
 
         }

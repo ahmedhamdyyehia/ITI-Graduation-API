@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Infrastructure.Migrations
+namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(WebDbContext))]
     partial class WebDbContextModelSnapshot : ModelSnapshot
@@ -56,7 +56,10 @@ namespace Infrastructure.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.DeliveryMethod", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("DeliveryTime")
                         .HasColumnType("nvarchar(max)");
@@ -78,7 +81,10 @@ namespace Infrastructure.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.Order", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("BuyerEmail")
                         .HasColumnType("nvarchar(max)");
@@ -113,7 +119,10 @@ namespace Infrastructure.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.OrderItem", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int?>("ItemOrderedProductItemId")
                         .HasColumnType("int");
@@ -139,10 +148,7 @@ namespace Infrastructure.Migrations
             modelBuilder.Entity("Core.Models.OrderAggregate.ProductItemOrdered", b =>
                 {
                     b.Property<int>("ProductItemId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductItemId"), 1L, 1);
 
                     b.Property<string>("PictureUrl")
                         .HasColumnType("nvarchar(max)");
