@@ -1,4 +1,5 @@
 ﻿using Core.Models;
+using Core.Models.OrderAggregate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,23 @@ namespace Infrastructure.Data
                 foreach (var item in products)
                 {
                     context.Products.Add(item);
+                }
+
+                await context.SaveChangesAsync();
+            }
+
+
+            if (!context.DeliveryMethods.Any())
+            {
+                // reading from json file
+                var dmData =
+                File.ReadAllText("../Infrastructure/Data/SeedData/delivery.json");
+                //deserilzeing the data to C# list
+                var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(dmData);
+                // adding the data to database
+                foreach (var item in methods)
+                {
+                    context.DeliveryMethods.Add(item);
                 }
 
                 await context.SaveChangesAsync();

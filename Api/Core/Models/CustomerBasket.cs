@@ -21,6 +21,6 @@ namespace Core.Models
         //angular application will generate Id. we will use a unique identifier for each
         //busket we create
         public string Id { get; set; }
-        public List<BasketItem> Items { get; set; } = new List<BasketItem>();
+        public List<BasketItem> Items{ get; set; } = new List<BasketItem>();
     }
 }
