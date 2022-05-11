@@ -3,10 +3,12 @@ using Api.Errors;
 using AutoMapper;
 using Core.Interfaces;
 using Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class BrandsController : BaseApiController
     {
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
