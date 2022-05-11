@@ -1,4 +1,6 @@
-﻿namespace Api.DTOs
+using Api.DTOs;
+
+namespace API.Dtos
 {
     public class OrderDto
     {
