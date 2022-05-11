@@ -6,6 +6,7 @@ using Api.DTOs;
 using AutoMapper;
 using Api.Errors;
 using Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Api.Controllers
 {
@@ -87,6 +88,7 @@ namespace Api.Controllers
     
         // product crud opertions
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<Products>> CreateProduct(ProductCreateDto productToCreate)
         {
             var product = _mapper.Map<ProductCreateDto, Products>(productToCreate);
@@ -100,6 +102,7 @@ namespace Api.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<Products>> UpdateProduct(int id, ProductCreateDto productToUpdate)
         {
             var product = await _productsRepo.GetByIdAsync(id);
@@ -114,6 +117,7 @@ namespace Api.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> DeleteProduct(int id)
         {
             var product = await _productsRepo.GetByIdAsync(id);
@@ -137,6 +141,7 @@ namespace Api.Controllers
 
         [HttpPut]
         [Route("{id}/photo")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> UplaodImg(IFormFile productImg , int id)
         {
             var product = await _productsRepo.GetByIdAsync(id);
