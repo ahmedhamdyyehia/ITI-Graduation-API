@@ -1,6 +1,7 @@
 ﻿using Core.Interfaces;
 using Core.Models;
 using Core.Models.OrderAggregate;
+using Core.Specifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +12,15 @@ namespace Infrastructure.Services
 {
     public class OrderService : IOrderService
     {
+        private readonly IUnitOfWork unitOfWork;
+
         public OrderService(IBasketRepository basketRepository, IUnitOfWork unitOfWork)
         {
             BasketRepository = basketRepository;
-            UnitOfWork = unitOfWork;
+            this.unitOfWork = unitOfWork;
         }
 
         public IBasketRepository BasketRepository { get; }
-        public IUnitOfWork UnitOfWork { get; }
 
         public  async Task<Order> CreateOrderAsync(string buyerEmail, Address shipToAddress, int deliveryMethodId, string basketId)
         {
@@ -31,14 +33,14 @@ namespace Infrastructure.Services
 
             foreach(var item in basket.Items)
             {
-                var productItem = await UnitOfWork.Repository<Products>().GetByIdAsync(item.Id);
+                var productItem = await unitOfWork.Repository<Products>().GetByIdAsync(item.Id);
                 var itemOrderd = new ProductItemOrdered(productItem.Id, productItem.Name, productItem.PictureUrl);
                 var orderItem = new OrderItem(itemOrderd, productItem.Price, item.Quantity);
                 items.Add(orderItem);
             }
             // get delivery method from repo 
 
-            var deliveryMethod =  await UnitOfWork.Repository<DeliveryMethod>().GetByIdAsync
+            var deliveryMethod =  await unitOfWork.Repository<DeliveryMethod>().GetByIdAsync
                 (deliveryMethodId);
             //culc subtotal 
             var subtotal = items.Sum(item => item.Price * item.Quantity);
@@ -46,11 +48,11 @@ namespace Infrastructure.Services
             //create order 
             var order = new Order(items, buyerEmail, shipToAddress, deliveryMethod, subtotal);
 
-            UnitOfWork.Repository<Order>().Add(order);
+            unitOfWork.Repository<Order>().Add(order);
 
             //save in db
 
-            var result = await UnitOfWork.Complete();
+            var result = await unitOfWork.Complete();
 
             if (result <= 0) return null;
 
@@ -61,19 +63,23 @@ namespace Infrastructure.Services
 
         }
 
-        public Task<IReadOnlyList<DeliveryMethod>> GetDeliveryMethodsAsync()
+        public async Task<IReadOnlyList<DeliveryMethod>> GetDeliveryMethodsAsync()
         {
-            throw new NotImplementedException();
+            return await unitOfWork.Repository<DeliveryMethod>().ListAllAsync();
         }
 
-        public Task<Order> GetOrderByIdAsync(int id, string buyerEmail)
+        public async Task<Order> GetOrderByIdAsync(int id, string buyerEmail)
         {
-            throw new NotImplementedException();
+            var spec = new OrdersWithItemsAndOrderingSpecification(id, buyerEmail);
+
+            return await unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
         }
 
-        public Task<IReadOnlyList<Order>> GetOrdersByUSerAsync(string buyerEmail)
+        public async Task<IReadOnlyList<Order>> GetOrdersByUSerAsync(string buyerEmail)
         {
-            throw new NotImplementedException();
+            var spec = new OrdersWithItemsAndOrderingSpecification(buyerEmail);
+
+            return await unitOfWork.Repository<Order>().ListAsync(spec);
         }
     }
 }
