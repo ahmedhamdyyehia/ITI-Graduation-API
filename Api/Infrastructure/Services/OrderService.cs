@@ -88,5 +88,25 @@ namespace Infrastructure.Services
 
             return await unitOfWork.Repository<Order>().ListAsync(spec);
         }
+
+        public async Task<Order> GetOrderByIdAsync(int id)
+        {
+            var spec = new OrdersWithItemsAndOrderingSpecification(id);
+
+            return await unitOfWork.Repository<Order>().GetEntityWithSpec(spec);
+        }
+
+        public async Task<bool> UpdateOrderStatus(int id)
+        {
+            var order = await unitOfWork.Repository<Order>().GetByIdAsync(id);
+
+            order.Status = OrderStatus.Accepted;
+            unitOfWork.Repository<Order>().Update(order);
+
+            var result = await unitOfWork.Complete();
+            if (result <= 0) return false;
+
+            return true;
+        }
     }
 }

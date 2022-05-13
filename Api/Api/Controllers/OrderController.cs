@@ -45,7 +45,7 @@ namespace Api.Controllers
             return Ok(mapper.Map<IReadOnlyList<Order>, IReadOnlyList<OrderToReturnDto>>(orders));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("userOrder/{id}")]
         public async Task<ActionResult<Order>> GetOrderByIdForUser(int id )
         {
             var email = HttpContext.User?.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
@@ -62,12 +62,31 @@ namespace Api.Controllers
             return Ok(await orderService.GetDeliveryMethodsAsync());
         }
 
+        [Authorize(Roles ="Admin")]
         [HttpGet("all")]
         public async Task<ActionResult<IReadOnlyList<OrderToReturnDto>>> GetAllOrders()
         {
             var orders = await orderService.GetAllOrdersAsync();
             return Ok(mapper.Map<IReadOnlyList<Order>, IReadOnlyList<OrderToReturnDto>>(orders));
         }
-            
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("{id}")]
+        public async Task<ActionResult<OrderToReturnDto>> GetOrderById(int id)
+        {
+            var order = await orderService.GetOrderByIdAsync(id);
+            if (order == null)
+                return NotFound(new ApiResponse(404));
+
+            return Ok(mapper.Map<Order, OrderToReturnDto>(order));
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}")]
+        public async Task<ActionResult<bool>> AcceptOrder(int id)
+        {          
+            return Ok(await orderService.UpdateOrderStatus(id));
+        }
+
     }
 }
