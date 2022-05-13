@@ -23,7 +23,6 @@ namespace Core.Models.OrderAggregate
 
         }
 
-        public int Id { get; set; }
         public string FristName { get; set; }
         public string LastName { get; set; }
         public string Street { get; set; }

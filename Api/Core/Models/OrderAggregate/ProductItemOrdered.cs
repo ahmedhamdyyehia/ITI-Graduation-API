@@ -12,19 +12,17 @@ namespace Core.Models.OrderAggregate
     {
 
         public ProductItemOrdered()
-        { 
-        }
-            public ProductItemOrdered(int productItemId, string productName,string pictureUrl)
         {
-            ProductItemId=productItemId;
+        }
+        public ProductItemOrdered(int productItemId, string productName, string pictureUrl)
+        {
+            ProductItemId = productItemId;
             ProductName = productName;
-            PictureUrl=pictureUrl;
+            PictureUrl = pictureUrl;
 
         }
 
 
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProductItemId { get; set; }
         public string ProductName { get; set; }
 
