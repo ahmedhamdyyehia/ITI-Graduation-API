@@ -12,13 +12,13 @@ namespace Infrastructure.Data
 {
     public class WebDbContext : DbContext
     {
-    
 
-        public WebDbContext (DbContextOptions<WebDbContext> options) : base(options)
+
+        public WebDbContext(DbContextOptions<WebDbContext> options) : base(options)
         {
-            
+
         }
-        public  DbSet<Products> Products { get; set; }
+        public DbSet<Products> Products { get; set; }
         public DbSet<ProductBrand> ProductBrands { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
 
@@ -27,9 +27,10 @@ namespace Infrastructure.Data
         public DbSet<DeliveryMethod> DeliveryMethods { get; set; }
 
 
-
-
-
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
     }
 }
