@@ -1,14 +1,35 @@
 [
   {
-    "Name": "Boards"
+    "Name": "Head phones",
+    "PictureUrl": "images/Types/Head phones.jpg"
   },
   {
-    "Name": "Hats"
+    "Name": "Labtops",
+    "PictureUrl": "images/Types/Labtops.jpg"
   },
   {
-    "Name": "Boots"
+    "Name": "Mens outfit",
+    "PictureUrl": "images/Types/Mens outfit.jpg"
   },
   {
-    "Name": "Gloves"
+    "Name": "Womens outfit",
+    "PictureUrl": "images/Types/Womens outfit.jpg"
+  },
+
+  {
+    "Name": "Smart watches",
+    "PictureUrl": "images/Types/smart watches.jpg"
+  },
+  {
+    "Name": "Video games",
+    "PictureUrl": "images/Types/Video games.jpg"
+  },
+  {
+    "Name": "Tvs",
+    "PictureUrl": "images/Types/Tvs.jpg"
+  },
+  {
+    "Name": "Mobile phones",
+    "PictureUrl": "images/Types/Mobile phones.jpg"
   }
 ]

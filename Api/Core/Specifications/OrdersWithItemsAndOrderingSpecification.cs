@@ -24,6 +24,15 @@ namespace Core.Specifications
             AddInclude(o => o.OrderItems);
         }
 
+        public OrdersWithItemsAndOrderingSpecification(int id)
+              : base(o => o.Id == id)
+        {
+            AddInclude(o => o.DeliveryMethod);
+            AddInclude(o => o.OrderItems);
+            AddInclude(o => o.ShipToAddress);
+            AddOrderByDescending(o => o.OrderDate);
+        }
+
         public OrdersWithItemsAndOrderingSpecification()
         {
             AddInclude(o => o.DeliveryMethod);

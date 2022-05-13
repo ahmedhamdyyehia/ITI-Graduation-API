@@ -12,10 +12,10 @@ namespace Core.Models.OrderAggregate
         [EnumMember (Value = "Pending")]
         Pending,
 
-        [EnumMember(Value = " Payment Recevied")]
-        PaymentRecevied,
+        [EnumMember(Value = " Accepted")]
+        Accepted,
 
-        [EnumMember(Value = "Payment Failed")]
-        PaymentFailed
+        [EnumMember(Value = "Refused")]
+        Failed
     }
 }

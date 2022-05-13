@@ -1,18 +1,18 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
+    "Name": "MacAirM1",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
-    "PictureUrl": "images/products/sb-ang1.png",
-    "ProductTypeId": 1,
+    "Price": 1500,
+    "PictureUrl": "images/products/MacAirM1.png",
+    "ProductTypeId": 2,
     "ProductBrandId": 1
   },
   {
-    "Name": "Green Angular Board 3000",
+    "Name": "MacProM1",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 150,
-    "PictureUrl": "images/products/sb-ang2.png",
-    "ProductTypeId": 1,
+    "Price": 1700,
+    "PictureUrl": "images/products/MacProM1.png",
+    "ProductTypeId": 2,
     "ProductBrandId": 1
   },
   {

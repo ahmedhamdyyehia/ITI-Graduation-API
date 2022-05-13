@@ -77,8 +77,7 @@ namespace Infrastructure.Data
         }
 
         public void Add(T entity)
-        {
-            
+        {           
             context.Set<T>().Add(entity);
         }
 
