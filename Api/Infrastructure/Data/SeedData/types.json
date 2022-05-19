@@ -1,35 +1,38 @@
 [
   {
-    "Name": "Head phones",
+    "Name": "Wireless Earbuds",
     "PictureUrl": "images/Types/Head phones.jpg"
   },
   {
-    "Name": "Labtops",
+    "Name": "Laptops",
     "PictureUrl": "images/Types/Labtops.jpg"
   },
   {
-    "Name": "Mens outfit",
+    "Name": "Men Fashion",
     "PictureUrl": "images/Types/Mens outfit.jpg"
   },
   {
-    "Name": "Womens outfit",
+    "Name": "Women Fashion",
     "PictureUrl": "images/Types/Womens outfit.jpg"
   },
-
   {
-    "Name": "Smart watches",
+    "Name": "Smart Watches",
     "PictureUrl": "images/Types/smart watches.jpg"
   },
   {
-    "Name": "Video games",
-    "PictureUrl": "images/Types/Video games.jpg"
+    "Name": "Sneakers",
+    "PictureUrl": "images/Types/Sneakers.png"
   },
   {
     "Name": "Tvs",
     "PictureUrl": "images/Types/Tvs.jpg"
   },
   {
-    "Name": "Mobile phones",
+    "Name": "Mobile Phones",
     "PictureUrl": "images/Types/Mobile phones.jpg"
+  },
+  {
+    "Name": "Tablets",
+    "PictureUrl": "images/Types/Tablets.jpeg"
   }
 ]

@@ -1,20 +1,39 @@
 [
   {
-    "Name": "Angular"
+    "Name": "Apple"
   },
   {
-    "Name": "NetCore"
+    "Name": "Samsung"
   },
   {
-    "Name": "VS Code"
+    "Name": "lenovo "
   },
   {
-    "Name": "React"
+    "Name": "Asus "
   },
   {
-    "Name": "Typescript"
+    "Name": "OnePlus"
   },
   {
-    "Name": "Redis"
+    "Name": "Huawei "
+  },
+  {
+    "Name": "Xiaomi  "
+  },
+  {
+    "Name": "LG  "
+  },
+  {
+    "Name": "OPPO "
+  },
+  {
+    "Name": "Nike "
+  },
+  {
+    "Name": "Adidas "
+  },
+  {
+    "Name": "Max "
   }
+
 ]
