@@ -31,7 +31,8 @@ namespace Core.Interfaces
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
-        
 
+        Task<List<OrderStatistics>> GetOrderStatistics();
+        Task<List<BrandStatistics>> GetBrandsStatistics();
     }
 }

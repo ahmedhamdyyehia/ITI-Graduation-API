@@ -108,5 +108,20 @@ namespace Infrastructure.Services
 
             return true;
         }
+
+        public async Task<List<OrderStatistics>> GetOrderStatistics()
+        {
+            var statistics = await unitOfWork.Repository<Order>().GetOrderStatistics();
+
+            return statistics;
+
+        }
+
+        public async Task<List<BrandStatistics>> GetBrandsStatistics()
+        {
+            var statistics = await unitOfWork.Repository<Order>().GetBrandsStatistics();
+
+            return statistics;
+        }
     }
 }

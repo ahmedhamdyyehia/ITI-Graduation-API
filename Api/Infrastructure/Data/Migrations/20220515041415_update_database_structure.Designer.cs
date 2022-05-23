@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(WebDbContext))]
-    [Migration("20220513000245_updateStructure")]
-    partial class updateStructure
+    [Migration("20220515041415_update_database_structure")]
+    partial class update_database_structure
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -135,13 +135,13 @@ namespace Infrastructure.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(1500)
+                        .HasColumnType("nvarchar(1500)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("PictureUrl")
                         .IsRequired()

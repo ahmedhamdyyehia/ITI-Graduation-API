@@ -81,7 +81,7 @@ namespace Api.Controllers
                 {
                     typeImg.CopyTo(fs);
                 }
-                type.PictureUrl = $"images/products/{typeImg.FileName}";
+                type.PictureUrl = $"images/Types/{typeImg.FileName}";
                 var result = await _productTypeRepo.UpdateEntityAsync(type);
                 if (result <= 0) return BadRequest(new ApiResponse(400, "Problem updating image"));
             }

@@ -1,8 +1,6 @@
 using API.Dtos;
 using AutoMapper;
 using Core.Models.OrderAggregate;
-using Core.Models.OrderAggregate;
-using Microsoft.Extensions.Configuration;
 
 namespace API.Helpers
 {

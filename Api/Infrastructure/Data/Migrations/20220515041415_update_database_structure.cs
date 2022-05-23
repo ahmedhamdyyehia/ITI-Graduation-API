@@ -5,28 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Infrastructure.Data.Migrations
 {
-    public partial class init : Migration
+    public partial class update_database_structure : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Address",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FristName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Street = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    State = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Address", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "DeliveryMethods",
                 columns: table => new
@@ -57,19 +39,6 @@ namespace Infrastructure.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProductItemOrdered",
-                columns: table => new
-                {
-                    ProductItemId = table.Column<int>(type: "int", nullable: false),
-                    ProductName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ProductItemOrdered", x => x.ProductItemId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ProductTypes",
                 columns: table => new
                 {
@@ -91,20 +60,20 @@ namespace Infrastructure.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     BuyerEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OrderDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    ShipToAddressId = table.Column<int>(type: "int", nullable: true),
+                    ShipToAddress_FristName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ShipToAddress_LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ShipToAddress_Street = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ShipToAddress_City = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ShipToAddress_State = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ShipToAddress_ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DeliveryMethodId = table.Column<int>(type: "int", nullable: true),
                     Subtotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PaymentIntentId = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Orders_Address_ShipToAddressId",
-                        column: x => x.ShipToAddressId,
-                        principalTable: "Address",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Orders_DeliveryMethods_DeliveryMethodId",
                         column: x => x.DeliveryMethodId,
@@ -118,8 +87,8 @@ namespace Infrastructure.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1500)", maxLength: 1500, nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProductTypeId = table.Column<int>(type: "int", nullable: false),
@@ -148,7 +117,9 @@ namespace Infrastructure.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ItemOrderedProductItemId = table.Column<int>(type: "int", nullable: true),
+                    ItemOrdered_ProductItemId = table.Column<int>(type: "int", nullable: true),
+                    ItemOrdered_ProductName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ItemOrdered_PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     OrderId = table.Column<int>(type: "int", nullable: true)
@@ -160,18 +131,9 @@ namespace Infrastructure.Data.Migrations
                         name: "FK_OrderItems_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_OrderItems_ProductItemOrdered_ItemOrderedProductItemId",
-                        column: x => x.ItemOrderedProductItemId,
-                        principalTable: "ProductItemOrdered",
-                        principalColumn: "ProductItemId");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrderItems_ItemOrderedProductItemId",
-                table: "OrderItems",
-                column: "ItemOrderedProductItemId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderItems_OrderId",
@@ -182,11 +144,6 @@ namespace Infrastructure.Data.Migrations
                 name: "IX_Orders_DeliveryMethodId",
                 table: "Orders",
                 column: "DeliveryMethodId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Orders_ShipToAddressId",
-                table: "Orders",
-                column: "ShipToAddressId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_ProductBrandId",
@@ -211,16 +168,10 @@ namespace Infrastructure.Data.Migrations
                 name: "Orders");
 
             migrationBuilder.DropTable(
-                name: "ProductItemOrdered");
-
-            migrationBuilder.DropTable(
                 name: "ProductBrands");
 
             migrationBuilder.DropTable(
                 name: "ProductTypes");
-
-            migrationBuilder.DropTable(
-                name: "Address");
 
             migrationBuilder.DropTable(
                 name: "DeliveryMethods");
