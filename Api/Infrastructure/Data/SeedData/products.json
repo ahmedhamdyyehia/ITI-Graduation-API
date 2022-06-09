@@ -204,6 +204,7 @@
   },
 
   {
+<<<<<<< HEAD
     "Name": "Apple Macbook Air 2020 Model, (13-Inch, Apple M1 chip with 8-core CPU and 7-core GPU, 8GB, 256GB, MGND3), Eng-KB, Silver",
     "Description": "Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine,8GB unified memory,256GB SSD storage,Retina display with True Tone,Touch ID and Two Thunderbolt / USB 4 ports.",
     "Price": 1000,
@@ -212,6 +213,532 @@
     "ProductBrandId": 1
   },
 
+  {
+    "Name": "Apple Macbook Air 2020 Model, (13-Inch, Apple M1 chip with 8-core CPU and 7-core GPU, 8GB, 512GB, MGND3), Eng-KB, Space Gray",
+    "Description": "Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine,8GB unified memory,256GB SSD storage,Retina display with True Tone,Touch ID and Two Thunderbolt / USB 4 ports.",
+    "Price": 1200,
+    "PictureUrl": "images/products/MacbookAirM1Gray.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "Apple MacBook Pro 2020 Model (13-Inch, Apple M1 chip with 8-core CPU and 8-core GPU, 8GB, 512GB, Touch Bar and Touch ID, MYD92 ), Eng-KB, Silver",
+    "Description": "Apple M1 chip with 8-core CPU, 8-core GPU, and 16-core Neural En,8GB unified memory,256GB SSD storage ,13-inch Retina display with True Tone Touch Bar and Touch ID Two Thunderbolt / USB 4 ports",
+    "Price": 1400,
+    "PictureUrl": "images/products/MacbookProM1Silver.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple MacBook Pro 2020 Model (13-Inch, Apple M1 chip with 8-core CPU and 8-core GPU, 16GB, 1TB, Touch Bar and Touch ID, MYD92 ), Eng-KB, Silver",
+    "Description": "Apple M1 chip with 8-core CPU, 8-core GPU, and 16-core Neural En,8GB unified memory,256GB SSD storage ,13-inch Retina display with True Tone Touch Bar and Touch ID Two Thunderbolt / USB 4 ports",
+    "Price": 1900,
+    "PictureUrl": "images/products/MacbookProM1Silver.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "Apple MacBook Pro 2020 Model (13-Inch, Apple M1 chip with 8-core CPU and 8-core GPU, 8GB, 512GB, Touch Bar and Touch ID, MYD92 ), Eng-KB, Space Gray",
+    "Description": "Apple M1 chip with 8-core CPU, 8-core GPU, and 16-core Neural En,8GB unified memory,256GB SSD storage ,13-inch Retina display with True Tone Touch Bar and Touch ID Two Thunderbolt / USB 4 ports",
+    "Price": 1350,
+    "PictureUrl": "images/products/MacbookProM1Gray.jpg",
+||||||| 987f2d6
+    "Name": "MacProM1",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 1700,
+    "PictureUrl": "images/products/MacProM1.png",
+=======
+    "Name": "Apple Macbook Air 2020 Model, (13-Inch, Apple M1 chip with 8-core CPU and 7-core GPU, 8GB, 256GB, MGND3), Eng-KB, Silver",
+    "Description": "Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine,8GB unified memory,256GB SSD storage,Retina display with True Tone,Touch ID and Two Thunderbolt / USB 4 ports.",
+    "Price": 1000,
+    "PictureUrl": "images/products/MacbookAirM1Silver.jpg",
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+<<<<<<< HEAD
+
+  {
+    "Name": " Apple MacBook Pro (14-inch, Apple M1 Pro chip with 10‑core CPU and 16‑core GPU, 16GB RAM, 1TB SSD) - Silver",
+    "Description": "Apple MacBook Pro Max with M1 Pro Max chip with 10‑core CPU and 16‑core GPU, 16GB RAM, 1TB SSD And 16 inch screen - Silver",
+    "Price": 4500,
+    "PictureUrl": "images/products/MacbookProM1MaxSilver.webp",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": " Lenovo Legion 5 Gaming Laptop",
+    "Description": "Ryzen 7 5800H 8-Core, 16GB RAM, 512GB SSD,NVIDIA GeForce RTX 3050 Ti 4GB GDDR6 Graphics, 15.6 FHD 1920x1080 IPS 300nits 165Hz, 4-Zone RGB Backlit Keyboard, Windows 10",
+    "Price": 2300,
+    "PictureUrl": "images/products/LenovoLegion5.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": " Lenovo IdeaPad 5 Laptop ",
+    "Description": "11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics, 15.6 FHD (1920x1080) TN 250nits Anti-glare, Dos - Platinum Grey",
+    "Price": 900,
+    "PictureUrl": "images/products/LenovoIdeaPad5.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": " Lenovo IdeaPad 3 15ITL6 Laptop ",
+    "Description": "11th Intel Core i7-1165G7, 12GB RAM , 512GB SSD, NVIDIA GeForce MX450 2GB GDDR5 Graphics, 15.6 FHD (1920x1080) TN 250nits Anti-glare, Dos - Arctic Grey",
+    "Price": 1200,
+    "PictureUrl": "images/products/LenovoIdeaPad3.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 3
+  },
+
+
+  {
+    "Name": " ASUS Vivobook X571LH-BQ007T Laptop  ",
+    "Description": "Ci7-10870H -16GB RAM -1TB HDD + 256GB SSD - GTX 1650 4 GB - 15.6 FHD - Win10 - Star Black",
+    "Price": 1500,
+    "PictureUrl": "images/products/AsusVivoBook.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": " ASUS TUF Gaming A15",
+    "Description": "AMD R7-4800H - 16GB - 512GB SSD - 15.6 inch 144Hz - RTX 3050, 4GB - Win10 - Eclipse Grey",
+    "Price": 2000,
+    "PictureUrl": "images/products/ASUSTUFGamingA15.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": " LAPTOP GAMING ASUS TUF DASH F15 ",
+    "Description": "Core™ i7-11370H-Ram 16GB DDR4- Hard1TB M.2 NVMe- GPU NVIDIA GeForce RTX 3060With 6GB-Display 15.6 FHD 144HZ- Color MoonLight White -OS WIN11",
+    "Price": 2300,
+    "PictureUrl": "images/products/AsusTUFDashF15.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+
+
+  {
+    "Name": "New 2021 Apple iPad mini (8.3-inch, Wi-Fi, 64GB) - Space Grey (6th Generation)",
+    "Description": "8.3-inch Liquid Retina display with True Tone and wide color, A15 Bionic chip with Neural Engine , Touch ID for secure authentication and Apple Pay and 12MP Wide back camera, 12MP Ultra Wide front camera with Center Stage",
+    "Price": 550,
+    "PictureUrl": "images/products/IpadMiniM1Black.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "New 2021 Apple iPad mini (8.3-inch, Wi-Fi, 64GB) - Purple (6th Generation)",
+    "Description": "8.3-inch Liquid Retina display with True Tone and wide color, A15 Bionic chip with Neural Engine , Touch ID for secure authentication and Apple Pay and 12MP Wide back camera, 12MP Ultra Wide front camera with Center Stage",
+    "Price": 550,
+    "PictureUrl": "images/products/IpadMiniM1Purple.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "New 2021 Apple iPad mini (8.3-inch, Wi-Fi, 64GB) - Pink (6th Generation)",
+    "Description": "8.3-inch Liquid Retina display with True Tone and wide color, A15 Bionic chip with Neural Engine , Touch ID for secure authentication and Apple Pay and 12MP Wide back camera, 12MP Ultra Wide front camera with Center Stage",
+    "Price": 550,
+    "PictureUrl": "images/products/IpadMiniM1Pink.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "New 2021 Apple iPad mini (8.3-inch, Wi-Fi, 64GB) - Starlight (6th Generation)",
+    "Description": "8.3-inch Liquid Retina display with True Tone and wide color, A15 Bionic chip with Neural Engine , Touch ID for secure authentication and Apple Pay and 12MP Wide back camera, 12MP Ultra Wide front camera with Center Stage",
+    "Price": 550,
+    "PictureUrl": "images/products/IpadMiniM1Starlight.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "New 2021 Apple iPad mini (8.3-inch, Wi-Fi, 256GB) - Starlight (6th Generation)",
+    "Description": "8.3-inch Liquid Retina display with True Tone and wide color, A15 Bionic chip with Neural Engine , Touch ID for secure authentication and Apple Pay and 12MP Wide back camera, 12MP Ultra Wide front camera with Center Stage",
+    "Price": 750,
+    "PictureUrl": "images/products/IpadMiniM1Starlight.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+
+
+  {
+    "Name": "Apple iPad Pro , 128GB, Wi-Fi, M1 Chip Tablet (3rd Generation - 2021), Space Gray",
+    "Description": "Model Number: MHQR3LL/A External Product ID: 194252185353 Front Camera: 12 MP Cellular Network Technology: WiFi Operating System Type: iOS Brand: Apple Number of Processor Core: Octa Core Rear Camera Resolution: 12 MP + 10 MP (Ultrawide) + TOF 3D LiDAR scanner RAM Size: 8 GB Bluetooth: Yes Display Type: Liquid Retina IPS LCD, 120Hz, HDR10, Dolby Vision. Battery Capacity in mAh: 7538 mAh. External Product ID Type: UPC-A. Screen Size: 10 inches and Above. Display Size (Inch): 11 inches. Number of SIM: Without SIM.",
+    "Price": 850,
+    "PictureUrl": "images/products/IpadProM1Gray.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple iPad Pro 12.9in, 256GB, Wi-Fi, M1 Chip Tablet (5th Generation - 2021, Space Gray)",
+    "Description": "Model Number: MHQR3LL/A External Product ID: 194252185353 Front Camera: 12 MP Cellular Network Technology: WiFi Operating System Type: iOS Brand: Apple Number of Processor Core: Octa Core Rear Camera Resolution: 12 MP + 10 MP (Ultrawide) + TOF 3D LiDAR scanner RAM Size: 8 GB Bluetooth: Yes Display Type: Liquid Retina IPS LCD, 120Hz, HDR10, Dolby Vision. Battery Capacity in mAh: 7538 mAh. External Product ID Type: UPC-A. Screen Size: 10 inches and Above. Display Size (Inch): 11 inches. Number of SIM: Without SIM.",
+    "Price": 1000,
+    "PictureUrl": "images/products/IpadProM113InchGray.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "SAMSUNG Galaxy Tab S7 Plus, Sm-T970,12.4in, 256gb, 8gb Ram, Wifi Only - Mystic Black",
+    "Description": "Storage Capacity: 256 GB Brand: Samsung Model Number: SM-T970 External Product ID: 8-80-60-90-69-634-3 Front Camera: 8 megapixels & Above Cellular Network Technology: WiFi Operating System Type: Android Number of Processor Core: Octa Core Rear Camera Resolution: 13MP RAM Size: 8 GB Bluetooth: Yes Display Type: Super AMOLED Battery Capacity in mAh: 10090 mAh External Product ID Type: EAN-13 Screen Size: 10 inches & Above Display Size (Inch): 12.4 Number of SIM: Without SIM.",
+    "Price": 800,
+    "PictureUrl": "images/products/SamsungTabS7Plus.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Samsung Galaxy Tab S7 128gb 4g LTE 11 inches Mystic Black",
+    "Description": "Samsung Galaxy Tab S7 128gb 4g LTE 11 inches Mystic Black",
+    "Price": 600,
+    "PictureUrl": "images/products/SamsuingTabS7.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Samsung Galaxy Tab S6 Lite - 10.4 Inches, 64 GB, 4 GB RAM, 4G LTE - Oxford Gray",
+    "Description": "Samsung Galaxy Tab S6 Lite - 10.4 Inches, 64 GB, 4 GB RAM, 4G LTE - Oxford Gray",
+    "Price": 400,
+    "PictureUrl": "images/products/SamsungTabS6Lite.jpg",
+    "ProductTypeId": 9,
+    "ProductBrandId": 2
+  },
+
+
+  {
+    "Name": "Apple Watch SE (GPS, 40mm) - Gold Aluminium Case with Starlight Sport Band - Regular",
+    "Description": "Take calls and reply to texts, right from your wrist , Track your daily activity on Apple Watch, and see your trends in the Fitness app on iPhone and Track new tai chi and pilates workouts, in addition to favorites like running, yoga, swimming, and dance",
+    "Price": 180,
+    "PictureUrl": "images/products/AppleWatchSEStarlight.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch SE (GPS, 44mm) - Gold Aluminium Case with Starlight Sport Band - Regular",
+    "Description": "Take calls and reply to texts, right from your wrist , Track your daily activity on Apple Watch, and see your trends in the Fitness app on iPhone and Track new tai chi and pilates workouts, in addition to favorites like running, yoga, swimming, and dance",
+    "Price": 200,
+    "PictureUrl": "images/products/AppleWatchSEStarlight.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "Apple Watch SE (GPS, 40mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular",
+    "Description": "Take calls and reply to texts, right from your wrist , Track your daily activity on Apple Watch, and see your trends in the Fitness app on iPhone and Track new tai chi and pilates workouts, in addition to favorites like running, yoga, swimming, and dance",
+    "Price": 180,
+    "PictureUrl": "images/products/AppleWatchSEGray.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch SE (GPS, 44mm) - Space Grey Aluminium Case with Midnight Sport Band - Regular",
+    "Description": "Take calls and reply to texts, right from your wrist , Track your daily activity on Apple Watch, and see your trends in the Fitness app on iPhone and Track new tai chi and pilates workouts, in addition to favorites like running, yoga, swimming, and dance",
+    "Price": 200,
+    "PictureUrl": "images/products/AppleWatchSEGray.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+
+
+  {
+    "Name": "Apple Series 6 Silicone Watch with GPS and Blood Oxygen Sensor, 44 mm - White",
+    "Description": "GPS model lets you take calls and reply to texts from your wrist, Measure your blood oxygen with an all-new sensor and app, Check your heart rhythm with the ECG app and The Always-On Retina display is 2.5x brighter outdoors when your wrist is down",
+    "Price": 250,
+    "PictureUrl": "images/products/AppleWatch6Silver.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Series 6 Silicone Watch with GPS and Blood Oxygen Sensor, 44 mm - Navy Blue",
+    "Description": "GPS model lets you take calls and reply to texts from your wrist, Measure your blood oxygen with an all-new sensor and app, Check your heart rhythm with the ECG app and The Always-On Retina display is 2.5x brighter outdoors when your wrist is down",
+    "Price": 270,
+    "PictureUrl": "images/products/AppleWatch6Blue.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Series 6 Silicone Watch with GPS and Blood Oxygen Sensor, 44 mm - Red",
+    "Description": "GPS model lets you take calls and reply to texts from your wrist, Measure your blood oxygen with an all-new sensor and app, Check your heart rhythm with the ECG app and The Always-On Retina display is 2.5x brighter outdoors when your wrist is down",
+    "Price": 250,
+    "PictureUrl": "images/products/AppleWatch6Red.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+
+
+  {
+    "Name": "Apple Watch Series 7 GPS, 41mm Starlight Aluminium Case with Starlight Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 400,
+    "PictureUrl": "images/products/AppleWatch7Starlight.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 45mm Starlight Aluminium Case with Starlight Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 450,
+    "PictureUrl": "images/products/AppleWatch7Starlight.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 41mm Green Aluminium Case with Clover Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 400,
+    "PictureUrl": "images/products/AppleWatch7Green.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 45mm Green Aluminium Case with Clover Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 450,
+    "PictureUrl": "images/products/AppleWatch7Green.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 41mm Blue Aluminum Case with Abyss Blue Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 400,
+    "PictureUrl": "images/products/AppleWatch7Blue.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 45mm Blue Aluminum Case with Abyss Blue Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 450,
+    "PictureUrl": "images/products/AppleWatch7Blue.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 41mm Midnight Aluminum Case with Midnight Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 400,
+    "PictureUrl": "images/products/AppleWatch7Gray.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Apple Watch Series 7 GPS, 45mm Midnight Aluminum Case with Midnight Sport Band - Regular",
+    "Description": "Always-on Retina display has nearly 20% more screen area than Series 6, making everything easier to see and use, Measure your blood oxygen with a powerful sensor and app ,  Take an ECG anytime, anywhere and Get high and low heart rate, and irregular heart rhythm notifications",
+    "Price": 450,
+    "PictureUrl": "images/products/AppleWatch7Gray.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 1
+  },
+
+
+  {
+    "Name": "Samsung Electronics Galaxy Watch 4 40mm",
+    "Description": "Smartwatch with ECG Monitor Tracker for Health Fitness Running Sleep Cycles GPS Fall Detection Bluetooth US Version, Black",
+    "Price": 200,
+    "PictureUrl": "images/products/GalaxyWatch4.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "SAMSUNG Galaxy Watch Active 2 (40mm, GPS, Bluetooth) ",
+    "Description": " Smart Watch with Advanced Health Monitoring, Fitness Tracking, and Long Lasting Battery, Aqua Black (US Version)",
+    "Price": 150,
+    "PictureUrl": "images/products/WatchActive2.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "OPPO Smart Watch 46MM WiFi (Black)",
+    "Description": " Equipped with Wear OS by Google system, the OPPO Watch supports customizing watch face provides plentiful applications in Google Play store. It provides healthy features such as 24/7 tracking of health data, as well as helpful features to help you make full use of time and live efficiently.",
+    "Price": 150,
+    "PictureUrl": "images/products/OPPOWatch.jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 9
+  },
+
+
+  {
+    "Name": "Apple AirPods Pro ",
+    "Description": "AirPods Pro have been designed to deliver Active Noise Cancellation for immersive sound, Transparency mode so you can hear your surroundings, and a customizable fit for all-day comfort. Just like AirPods, AirPods Pro connect magically to your iPhone or Apple Watch. And they’re ready to use right out of the case. AirPods Pro offer a more customizable fit with three sizes of flexible silicone tips to choose from. With an internal taper, they conform to the shape of your ear, securing your AirPods Pro in place and creating an exceptional seal for superior noise cancellation.",
+    "Price": 180,
+    "PictureUrl": "images/products/AirpodsPro.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "Apple AirPods (3rd generation) ",
+    "Description": "Power and Battery: Up to 6 hours of listening time with a single charge (up to 5 hours with spatial audio enabled) Up to 4 hours of talk time with a single charge. AirPods (3rd generation) with Magsafe Charging Case: Up to 30 hours of listening time, up to 20 hours of talk time, 5 minutes in the case provides around 1 hour of listening time or around 1 hour of talk time,Spatial audio with dynamic head tracking places sound all around you",
+    "Price": 160,
+    "PictureUrl": "images/products/Airpods3.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "Apple AirPods with Charging Case (2nd generation) ",
+    "Description": "style:wired charging case with optimal talk time and voice-activated siri access, and complete with charging case, airpodsdeliver an unparalleled wireless headphone experience. they’re ready to use with all your devices.put them in your ears and they connect immediately, immersing you in rich, high-fidelity sound.just like magi",
+    "Price": 120,
+    "PictureUrl": "images/products/Airpods2WithChargingCase.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "OnePlus  Pro TWS White",
+    "Description": "OnePlus Buds Pro - Hear the Unheard | Up to 38 Hours of battery life | Ultra low latency and Bluetooth 5.2 | IP55 Water and Sweat Resistance| 11mm dynamic drivers tuned for rich bass",
+    "Price": 120,
+    "PictureUrl": "images/products/OnePlusBudsProTWSWhite.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+
+  {
+    "Name": "OnePlus  Pro TWS Black",
+    "Description": "OnePlus Buds Pro - Hear the Unheard | Up to 38 Hours of battery life | Ultra low latency and Bluetooth 5.2 | IP55 Water and Sweat Resistance| 11mm dynamic drivers tuned for rich bass",
+    "Price": 120,
+    "PictureUrl": "images/products/OnePlusBudsProTWSBlack.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+
+  {
+    "Name": "HUAWEI FreeBuds Pro ",
+    "Description": "HUAWEI FreeBuds Pro comes with Bluetooth 5.2 certified Kirin A1 Chipset, which reduces latency to a striking 180 ms, inging an exceptional fluid experience. there are three colors to choice: white,black and silver. HUAWEI FreeBuds Pro ' delicate windproof structure and fluid mechanical design eliminate any whistling sound caused by air friction. Feel free to enjoy the eeze when walking, running and cycling.",
+    "Price": 180,
+    "PictureUrl": "images/products/HUAWEIFreeBudsPro.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "HUAWEI FreeBuds 4i ",
+    "Description": "HUAWEI FreeBuds 4i Wireless In-Ear Bluetooth Earphones with Comfortable Active Noise Cancellation, Fast Charging, Long Battery Life, Crystal Clear Sound Dual-Mic Earbuds, Silver forest, Regular",
+    "Price": 110,
+    "PictureUrl": "images/products/HUAWEIFreeBuds4i.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Huawei FreeBuds 3i ",
+    "Description": "While the outward-facing mic is detecting ambient noise to actively counter with the anti-noise, the inward-facing mic is picking up the rest noise in your ears for further cancellation. HUAWEI FreeBuds 3i offers a thorough noise-cancelling experience for your immersive enjoyment.",
+    "Price": 90,
+    "PictureUrl": "images/products/HuaweiFreeBuds3i.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 6
+  },
+
+  {
+    "Name": "Xiaomi Mi True 2 ",
+    "Description": "Features:Dual microphone for noise reduction without fear of interferenceOpen box and popup window, you can see it with smart connectionSmart and true wireless, free and freeLarge-size moving coil unit, rich and natural hearingSimultaneous binaural transmission, game audio and video is more enjoyableSpecification:and: XiaomiName: Air2 SE/;AirDots Pro 2 SE/ Poco BudsProduct model: TWSEJ04WMNet weight: 48gCharging port: Type-CSpeaker impedance:",
+    "Price": 60,
+    "PictureUrl": "images/products/XiaomiMiTrue2.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 7
+  },
+
+  {
+    "Name": "Xiaomi Redmi Buds 3 Pro - White",
+    "Description": "Xiaomi Redmi Buds 3 Pro Wireless Smart Earbuds with Noise Cancelation, Dual-device connectivity, Wireless charging, 28h long battery life.",
+    "Price": 90,
+    "PictureUrl": "images/products/XiaomiRedmiBuds3Pro.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 7
+  },
+  {
+    "Name": "Xiaomi Redmi Buds 3 Pro - Black",
+    "Description": "Xiaomi Redmi Buds 3 Pro Wireless Smart Earbuds with Noise Cancelation, Dual-device connectivity, Wireless charging, 28h long battery life.",
+    "Price": 75,
+    "PictureUrl": "images/products/XiaomiRedmiBuds3ProBlack.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 7
+  },
+
+  {
+    "Name": "Samsung 65 Inch 4K UHD Smart LED TV with Built-in Receiver and Remote Control - Black",
+    "Description": "Samsung 65 Inch 4K UHD Smart LED TV with Built-in Receiver and Remote Control, Black - UA65AU7000UXEG",
+    "Price": 700,
+    "PictureUrl": "images/products/Samsung65Inch4K.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Samsung 32 Inch HD Smart LED TV with Built-in Receiver - Black",
+    "Description": "brand: samsung size in inch: 32 hd type: hd display type: led built-in receiver: yes smart connection: yes (wi-fi, ethernet) connectivity: 1 usb ports, 2 hdmi ports model number: ua32t5300auxeg",
+    "Price": 350,
+    "PictureUrl": "images/products/Samsung32InchHDSmartLEDTVwithBuiltInReceiver.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 2
+  },
+
+  {
+    "Name": "Samsung 55 Inch 4K Ultra HD Smart Curved LED TV with Built-in Receiver",
+    "Description": "Brand: Samsung Size: 124 x 79 x 26 cm It features processor transforms images into 4K You can watch TV from any angle in the room thanks to curve design Crystal clear colors to deliver vivid pictures It features Ambient mode that enables your TV to mimic wall behind it You can access your files and documents using Microsoft office 365 High dynamic range to enjoy visual details in dark scenes It features auto game mode to optimize screen and minimizes lag You can hide cables in stand for less clutter You can mirror movies or music from your smartphone to your TV You can now access your favorites shows and control your TV using Bixby voice assistant",
+    "Price": 550,
+    "PictureUrl": "images/products/Samsungd55Inch4KUltraHDSmartCurved.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 2
+  },
+
+  {
+    "Name": "SAMSUNG 55 Inch TV Quantum Processor Lite 4K QLED, New Edition - Black",
+    "Description": "SAMSUNG QA55Q60BAUXEG TV 55 Screen Size, high 3,840 x 2,160 Resolution. Having a clear Picture Engine with Quantum Processor Lite 4K, Quantum HDR, Mega Contrast and 100% Colour Volume with Quantum Dot. Having Wider Viewing Angle Supported with Supreme UHD Dimming,Dual LED, Contrast Enhancer, Auto Motion Plus. Enjoying the movie vibes with Filmmaker Mode ,Brightness Detection,2CH Speaker Type and Adaptive Sound. Supported by Tizen™ Operating System,",
+    "Price": 850,
+    "PictureUrl": "images/products/SAMSUNG55InchTVQuantumProcessorLite4KQLED.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 2
+  },
+
+  {
+    "Name": "SAMSUNG 85 Inch TV Neural Quantum Processor 8K QLED QA85QN800BUXEG, New Edition - Black",
+    "Description": "SAMSUNG QA85QN800BUXEG TV with 65 Screen Size for a better resolution 7,680 x 4,320, 100Hz Refresh Rate and Anti Reflection. Clear Picture Engine of Neural Quantum Processor 8K, 4900 Picture Quality Index, Quantim Matrix Technology Pro Contrast, 100% Colour Volume with Quantum Dot and having wide Ultra Viewing Angle with Ultimate 8K Dimming Pro enjoying movie vibes with LED Clear Motion and Brigtness/Color Detection. Having Gaming vibes with Auto Game Mode (ALLM), Game Motion Plus, Surround Sound, Super Ultra Wide Game View and Mini Map Zoom. All of these with Infinity One Design, 4 Bezel-less type and Ultra Slim Type",
+    "Price": 6400,
+    "PictureUrl": "images/products/SAMSUNG85InchTVNeuralQuantumProcessor8KQLED.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 2
+  },
+
+  {
+    "Name": "LG 75 inches NanoCell Smart TV, 4K Active HDR, WebOS Operating System, ThinQ AI - 75NANO75VPA",
+    "Description": "QNED Cinema. Show-stopping performance. LG QNED mini LED delivers a breathtakingly cinematic performance. Stunning blacks and a brighter display produce a picture that is enhanced in almost every way for a new level of immersion. This is a TV that will take your breath away every single time.",
+    "Price": 1600,
+    "PictureUrl": "images/products/LG75inchesNanoCellSmartTV4K.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 8
+  },
+  {
+    "Name": "LG OLED TV 48 Inch C1 Series, Cinema Screen Design 4K Cinema HDR WebOS Smart AI ThinQ Pixel Dimming - OLED48C1PVB",
+    "Description": "LG 4K SELF-LIT OLED evo – true brilliance in clarity of content Perfect Color ( 100% colour fidelity ) Eye Comfort Display α9 Gen4 AI Processor 4k with AI 4K upscaling ThinQ AI webOS Smart TV with NFC Magic Remote True Cinema Experience suported with Dolby Vision IQ | Dolby Atmos Unlimited Gameplay with GSYNC , AMD Free Sync Premium , LG VRR , HGiG HDMI 2.1 , Game Optimiser LG 4K SELF-LIT OLED evo – true brilliance in clarity of content Perfect Color ( 100% colour fidelity ) ",
+    "Price": 1200,
+    "PictureUrl": "images/products/LGOLEDTV48InchC1Series.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 8
+  },
+  {
+    "Name": "Apple TV 4K (32GB)",
+    "Description": "Compact in terms of design, it scores high on the aspect of utility too. This is what makes it worth the buy.",
+    "Price": 300,
+    "PictureUrl": "images/products/AppleTV.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 1
+  },
+
+  {
+    "Name": "Xiaomi Mi Box S with 4K HDR Android TV Streaming Media Player Google Assistant Remote Official International Version - BLACK",
+    "Description": "Xiaomi Mi Box S with 4K HDR Android TV Streaming Media Player Google Assistant Remote Official International Version - BLACK.",
+    "Price": 75,
+    "PictureUrl": "images/products/XiaomiTV.jpg",
+    "ProductTypeId": 7,
+    "ProductBrandId": 7
+  },
+
+
+||||||| 987f2d6
+=======
+
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
   {
     "Name": "Apple Macbook Air 2020 Model, (13-Inch, Apple M1 chip with 8-core CPU and 7-core GPU, 8GB, 512GB, MGND3), Eng-KB, Space Gray",
     "Description": "Apple M1 chip with 8‑core CPU, 7‑core GPU, and 16‑core Neural Engine,8GB unified memory,256GB SSD storage,Retina display with True Tone,Touch ID and Two Thunderbolt / USB 4 ports.",
@@ -722,132 +1249,201 @@
   },
 
 
+
+
+
+
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/sb-core1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "Name": "Air Jordan 1 High OG sneakers",
+    "Description": "Supplied by a premier sneaker marketplace dealing with unworn, already sold out, in demand rarities. Each product is rigorously inspected by experienced experts guaranteeing authenticity.",
+    "Price": 1250,
+    "PictureUrl": "images/products/JordanRed.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 10
   },
   {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Name": "Air Jordan 1 Zoom Air CMFT sneakers",
+    "Description": "The Air Jordan 1 Zoom Air CMFT now arrives with a “Multi-Color” blocking design. This sneaker is crafted from a mix of leather and suede overlays and features a classic black toe highlighted with multicoloured accents throughout. The usual Wings and Swoosh logos decorate the side.",
+    "Price": 500,
+    "PictureUrl": "images/products/JordanZoom.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Air Jordan 1 Mid sneakers",
+    "Description": "The “Brazil” Inspired Air Jordan 1 Mid is dressed in green, white and yellow colours. This high-top sneaker is crafted from leather and features the iconic Wings logo and Swoosh on the sides while a signature Jumpman logo appears on the tongue. Underneath, a two-toned rubber sole finishes the look with comfort.",
+    "Price": 390,
+    "PictureUrl": "images/products/JordanGreen.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Air Jordan 1 High Tie-Dye Sneakers",
+    "Description": "Supplied by a premier sneaker marketplace dealing with unworn, already sold out, in demand rarities. Each product is rigorously inspected by experienced experts guaranteeing authenticity. Make sure your footwear is ready for the warm summer-time weather. Michael Jordan’s first signature shoe has been reimagined in a tropical-inspired green and blue tie-dye pattern. The lively high-top pair feature contrasting black and white leather covering the toe box and mid-panel, while the bold white rubber sole finishes off the bright look.",
+    "Price": 650,
+    "PictureUrl": "images/products/JordanLightBlue.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Adidas Originals NMD_R2 Primeknit sneakers",
+    "Description": "Supplied by a premier sneaker marketplace dealing with unworn, already sold out, in demand rarities. Each product is rigorously inspected by experienced experts guaranteeing authenticity. Some of the best NMD releases have come when adidas experiments with the design on the Primeknit. Released summer 2017, this NMD R2 sports an updated pattern created with a Shadow Knit technique that gives off the appearance that colors are shifting. ",
+    "Price": 240,
+    "PictureUrl": "images/products/AdidasBlack.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 11
+  },
+  {
+    "Name": "Adidas NMD_R1 sneakers",
+    "Description": "These will be your ride or die. Boasting a comfortable rubber sole, these NMD_R1 sneakers from adidas are so practical and stylish that you'll probably live in them all year. Perfectly doable.",
+    "Price": 340,
+    "PictureUrl": "images/products/AdidasGold.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 11
+  },
+  {
+    "Name": "Adidas NMD_R1 Low-Top Sneakers",
+    "Description": "Designed with the label's energy-returning boost™ midsole, the Adidas Originals NMD_R1 sneakers combine heritage styling with contemporary and innovative construction. This pair arrives in white colour, with some light blue and pink accents and features a branded NMD rear pull tab. They're built with a breathable knitted upper, a signature three stripe detail to each outer wall and a rubber midsole that provides comfort all day.",
+    "Price": 290,
+    "PictureUrl": "images/products/AdidasGirly.webp",
+    "ProductTypeId": 6,
+    "ProductBrandId": 11
+  },
+  {
+    "Name": "Adidas x Nice Kicks UltraBOOST Sneakers",
+    "Description": "Multicoloured x Nice Kicks UltraBOOST sneakers from Adidas featuring a tie-dye print, a round toe, a lace-up front fastening, a rubber sole and a Boost midsole. POSITIVELY CONSCIOUS: Adidas Group scores 4 out 5 by independent ethical brand rating agency Good On You. It uses eco-friendly materials in many products - 100% of its cotton is from sustainable sources and it's committed to use 100% recycled polyester by 2024. It traces and audits almost all of its supply chain to ensure good labour standards, and has committed to reduce carbon and water stress across its whole supplier base.",
+    "Price": 475,
+    "PictureUrl": "images/products/AdidasUltraBOOST.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 11
+  },
+
+
+
+
+
+
+
+  {
+    "Name": "Nike x Drake Certified Lover Boy T-shirt",
+    "Description": "Turn up the volume - this Nike x Drake Certified Lover Boy T-shirt will be music to your ears. Launched as a part of the Canadian rapper collaborative Certified Lover Boy album merch, it features a black Nike Swoosh above gold lettering that spells out CLB on the front. Louder?",
+    "Price": 135,
+    "PictureUrl": "images/products/DrakeCertifiedLoverBoy2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Nike x Drake Certified Lover Fan T-shirt",
+    "Description": "Turn up the volume - this Nike x Drake Certified Lover Boy T-shirt will be music to your ears. Launched as a part of the Canadian rapper collaborative Certified Lover Boy album merch, it features a black Nike Swoosh above gold lettering that spells out CLB on the front. Louder?",
+    "Price": 135,
+    "PictureUrl": "images/products/DrakeCertifiedLoverBoy.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Nike Sportswear Swoosh hoodie",
+    "Description": "Sportswear Swoosh hoodie - White - Cotton",
+    "Price": 125,
+    "PictureUrl": "images/products/NikeSportWhiteHoodie.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 10
+  },
+  {
+    "Name": "Nike x Drake Certified Lover Boy hoodie",
+    "Description": "The Certified Lover Boy collection was just the beginning of Drake's partnership with Nike, and it's almost impossible not to love it. Designed specifically to commemorate Drake's new album, released in January 2021, this blue hoodie stands out for its special details - like the CLB logo, a rose print and embroidered Nike Swoosh on the centre chest.",
     "Price": 300,
-    "PictureUrl": "images/products/sb-core2.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
-    "PictureUrl": "images/products/sb-react1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 120,
-    "PictureUrl": "images/products/sb-ts1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 5
-  },
-  {
-    "Name": "Core Blue Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 10,
-    "PictureUrl": "images/products/hat-core1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 8,
-    "PictureUrl": "images/products/hat-react1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Purple React Woolen Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 15,
-    "PictureUrl": "images/products/hat-react2.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 18,
-    "PictureUrl": "images/products/glove-code1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
-  },
-  {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 15,
-    "PictureUrl": "images/products/glove-code2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
-  },
-  {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Price": 16,
-    "PictureUrl": "images/products/glove-react1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 14,
-    "PictureUrl": "images/products/glove-react2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 250,
-    "PictureUrl": "images/products/boot-redis1.png",
+    "PictureUrl": "images/products/NikeDrakeHoodie.png",
     "ProductTypeId": 3,
-    "ProductBrandId": 6
+    "ProductBrandId": 10
   },
   {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 189.99,
-    "PictureUrl": "images/products/boot-core2.png",
+    "Name": "Nike chest logo-print jacket",
+    "Description": "chest logo-print jacket - Black" ,
+    "Price": 400,
+    "PictureUrl": "images/products/NikeBumbJacket.png",
     "ProductTypeId": 3,
-    "ProductBrandId": 2
+    "ProductBrandId": 10
   },
   {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 199.99,
-    "PictureUrl": "images/products/boot-core1.png",
+    "Name": "Nike Therma-Fit City Series puffer jacket",
+    "Description": "Therma-Fit City Series puffer jacket - Black",
+    "Price": 600,
+    "PictureUrl": "images/products/NikeBufferJacket.png",
     "ProductTypeId": 3,
-    "ProductBrandId": 2
+    "ProductBrandId": 10
   },
   {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Name": "Adidas Trefoil-logo tie-waist dress",
+    "Description": "Trefoil-logo tie-waist dress - open front - Long Sleeves",
     "Price": 150,
-    "PictureUrl": "images/products/boot-ang2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "PictureUrl": "images/products/AdidasDress.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 11
   },
   {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/boot-ang1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "Name": "Floral Print Tiered Midi Dress with Round Neck and Waist Tie Up",
+    "Description": "Upgrade your closet of casual wear by getting this midi dress that is designed in a tiered style. This floral print midi dress makes it a perfect pick to be teamed with a pair of metallic earrings and necklaces. The round neckline and waist tie-up closure allow easy dressing - Elbow Sleeves.",
+    "Price": 99,
+    "PictureUrl": "images/products/Dress1.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Solid Knee Length Shift Dress with Belt",
+    "Description": "A trendy addition to your collection of dresses, this one has a subtle texture and single tone all over. To accentuate the look, this shift dress comes with a belt. The round neckline and elbow-length sleeves further add to the comfortable feel and smart look - Elbow Sleeves.",
+    "Price": 99,
+    "PictureUrl": "images/products/Dress2.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Striped Shirt Dress with Short Sleeves and Waist Tie-Ups",
+    "Description": "Striped Shirt Dress with Short Sleeves and Waist Tie-Ups - Short Sleeves",
+    "Price": 100,
+    "PictureUrl": "images/products/Dress3.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Ribbed Knee Length A-line Dress with Short Sleeves and Button Closure",
+    "Description": "Take your style quotient to the next level by dressing in this charming ribbed dress. The short sleeves and the button closure of this knee-length dress lends a stylish look to you. Made using quality fabric, this piece has a good finish that is hard to miss - Short Sleeves",
+    "Price": 100,
+    "PictureUrl": "images/products/Dress4.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Solid Knee Length Tiered Dress with Round Neck and Short Sleeves",
+    "Description": "Featuring a tiered detail, this solid-toned knee length dress promises a chic and relaxed style to you. Tailor-made from breathable fabric, this piece ensures comfort all day. It features a round neck and short sleeves. Furthermore, you can coordinate this dress with a pair of sneakers and a crossbody bag - Short Sleeves.",
+    "Price": 100,
+    "PictureUrl": "images/products/Dress5.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Solid Tiered Midi Dress with Round Neck and Short Sleeves",
+    "Description": "Complete your collection of casual wear by getting this midi dress that features a solid hue in a tiered style. This round-neck dress will look great when teamed with a pair of sneakers and a minimalistic pair of earrings.",
+    "Price": 100,
+    "PictureUrl": "images/products/Dress6.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Floral Print Knee Length A-line V-neck Dress with Short Sleeves",
+    "Description": "Peppered with floral print motifs, this V-neck dress is a sassy pick for your closet. Made from synthetic, this durable piece is easy to slip on and comfy to wear. With short sleeves for added appeal, this dress looks great when styled with a pair of contrast heeled sandals.",
+    "Price": 100,
+    "PictureUrl": "images/products/Dress7.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
+  },
+  {
+    "Name": "Textured Midi Shift Dress with 3/4 Sleeves",
+    "Description": "Accentuate your casual wear wardrobe with this elegant shift dress. Featuring three-quarter sleeves, this midi dress will lend a suitable fit while the textured design adds to its appeal. Pair it with a jacket and sneakers for a trendy appeal.",
+    "Price": 100,
+    "PictureUrl": "images/products/Dress8.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 12
   }
+
+
 ]
