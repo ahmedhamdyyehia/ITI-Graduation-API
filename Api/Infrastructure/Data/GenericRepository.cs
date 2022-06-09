@@ -92,5 +92,44 @@ namespace Infrastructure.Data
 
             context.Set<T>().Remove(entity);
         }
+   
+        public async Task<List<OrderStatistics>> GetOrderStatistics()
+        {
+            List<OrderStatistics> statistics = await context.Orders
+                .GroupBy(d => d.OrderDate.Date,
+                (k, c) => new OrderStatistics { OrderDate = k.ToString("dddd, dd MMMM yyyy"), NumberOfOrders = c.Count() })
+                .ToListAsync();
+
+            return statistics;
+        }
+
+        public async Task<List<BrandStatistics>> GetBrandsStatistics()
+        {
+            var brandStatistics = await context.Products
+                .Join(
+                     context.OrderItems,
+                     product => product.Id,
+                     ordertItem => ordertItem.ItemOrdered.ProductItemId,
+                     (product, ordertItem) => new
+                     {
+                         Quantity = ordertItem.Quantity,
+                         ProductBrandId = product.ProductBrandId,
+                     }).Join(
+                            context.ProductBrands,
+                            outerproId => outerproId.ProductBrandId,
+                            innerProId => innerProId.Id,
+                            (outerproId, innerProId) => new
+                            {
+                                BrandName = innerProId.Name,
+                                Quantity = outerproId.Quantity,
+                            }).GroupBy(n => n.BrandName, (k, c) => new BrandStatistics
+                            {
+                                BrandName = k,
+                                NumberOfSales = c.Count()
+                            }).ToListAsync();
+
+            return brandStatistics;         
+        }
+
     }
 }

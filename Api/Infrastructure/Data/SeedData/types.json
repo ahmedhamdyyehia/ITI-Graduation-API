@@ -1,35 +1,66 @@
 [
   {
-    "Name": "Head phones",
+    "Name": "Wireless Earbuds",
     "PictureUrl": "images/Types/Head phones.jpg"
   },
   {
-    "Name": "Labtops",
+    "Name": "Laptops",
     "PictureUrl": "images/Types/Labtops.jpg"
   },
   {
+<<<<<<< HEAD
+    "Name": "Mens Outfit",
+||||||| 987f2d6
     "Name": "Mens outfit",
+=======
+    "Name": "Men Fashion",
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
     "PictureUrl": "images/Types/Mens outfit.jpg"
   },
   {
+<<<<<<< HEAD
+    "Name": "Womens Outfit",
+||||||| 987f2d6
     "Name": "Womens outfit",
+=======
+    "Name": "Women Fashion",
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
     "PictureUrl": "images/Types/Womens outfit.jpg"
   },
-
   {
-    "Name": "Smart watches",
+    "Name": "Smart Watches",
     "PictureUrl": "images/Types/smart watches.jpg"
   },
   {
+<<<<<<< HEAD
+    "Name": "Video Games",
+    "PictureUrl": "images/Types/Video games.jpg"
+||||||| 987f2d6
     "Name": "Video games",
     "PictureUrl": "images/Types/Video games.jpg"
+=======
+    "Name": "Sneakers",
+    "PictureUrl": "images/Types/Sneakers.png"
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
   },
   {
     "Name": "Tvs",
     "PictureUrl": "images/Types/Tvs.jpg"
   },
   {
-    "Name": "Mobile phones",
+    "Name": "Mobile Phones",
     "PictureUrl": "images/Types/Mobile phones.jpg"
+<<<<<<< HEAD
+  },
+  {
+    "Name": "Tablets",
+    "PictureUrl": ""
+||||||| 987f2d6
+=======
+  },
+  {
+    "Name": "Tablets",
+    "PictureUrl": "images/Types/Tablets.jpeg"
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
   }
 ]

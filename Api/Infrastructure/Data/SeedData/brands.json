@@ -1,20 +1,54 @@
 [
   {
-    "Name": "Angular"
+    "Name": "Apple"
   },
   {
-    "Name": "NetCore"
+    "Name": "Samsung"
   },
   {
-    "Name": "VS Code"
+    "Name": "lenovo "
   },
   {
-    "Name": "React"
+    "Name": "Asus "
   },
   {
-    "Name": "Typescript"
+    "Name": "OnePlus"
   },
   {
+<<<<<<< HEAD
+    "Name": "Huawei "
+  },
+  {
+    "Name": "Xiaomi  "
+  },
+  {
+    "Name": "LG  "
+  },
+  {
+    "Name": "OPPO "
+||||||| 987f2d6
     "Name": "Redis"
+=======
+    "Name": "Huawei "
+  },
+  {
+    "Name": "Xiaomi  "
+  },
+  {
+    "Name": "LG  "
+  },
+  {
+    "Name": "OPPO "
+  },
+  {
+    "Name": "Nike "
+  },
+  {
+    "Name": "Adidas "
+  },
+  {
+    "Name": "Max "
+>>>>>>> 311b4d632de2f80be5322acf0b306879578c8bf5
   }
+
 ]

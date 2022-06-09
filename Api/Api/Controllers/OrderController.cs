@@ -3,6 +3,7 @@ using Api.Errors;
 using API.Dtos;
 using AutoMapper;
 using Core.Interfaces;
+using Core.Models;
 using Core.Models.OrderAggregate;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -88,5 +89,19 @@ namespace Api.Controllers
             return Ok(await orderService.UpdateOrderStatus(id));
         }
 
+
+        [HttpGet("statistics")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<OrderStatistics>> GetOrderStatictics()
+        {
+            return Ok(await orderService.GetOrderStatistics());
+        }
+
+        [HttpGet("Brand/statistics")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<BrandStatistics>> GetBrandsStatictics()
+        {
+            return Ok(await orderService.GetBrandsStatistics());
+        }
     }
 }

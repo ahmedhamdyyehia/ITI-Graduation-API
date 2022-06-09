@@ -1,4 +1,5 @@
-﻿using Core.Models.OrderAggregate;
+﻿using Core.Models;
+using Core.Models.OrderAggregate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,8 @@ namespace Core.Interfaces
         Task<IReadOnlyList<Order>> GetAllOrdersAsync();
 
         Task<bool> UpdateOrderStatus(int id);
+
+        Task<List<OrderStatistics>> GetOrderStatistics();
+        Task<List<BrandStatistics>> GetBrandsStatistics();
     }
 }
